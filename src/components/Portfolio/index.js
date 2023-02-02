@@ -22,8 +22,8 @@ function Portfolio() {
       repo: 'https://github.com/nbtrieu/weather-dashboard'
     },
     {
-      name: 'note-taker',
-      description: 'Express/CSS',
+      name: 'tech-blog',
+      description: 'Express/Handlebars/Sequelize',
       link: 'https://nbtrieu-note-taker.herokuapp.com/.',
       repo: 'https://github.com/nbtrieu/note-taker'
     }
