@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/nt-portfolio/static/css/main.159410b1.css",
+    "main.js": "/nt-portfolio/static/js/main.3d26d720.js",
+    "static/media/pokemon-battle-simulator.png": "/nt-portfolio/static/media/pokemon-battle-simulator.4dbedfd198a48a671fd7.png",
+    "static/media/weather-dashboard.png": "/nt-portfolio/static/media/weather-dashboard.0229c93536497f7acaa6.png",
+    "static/media/SEND-MOODS.png": "/nt-portfolio/static/media/SEND-MOODS.8c136a67564904befb7d.png",
+    "static/media/profile.jpeg": "/nt-portfolio/static/media/profile.e862b92f41b48ab0f0c1.jpeg",
+    "static/media/tech-blog.png": "/nt-portfolio/static/media/tech-blog.4801d97d812a1f303f22.png",
+    "static/media/note-taker.png": "/nt-portfolio/static/media/note-taker.68e46ec7dd05bb16bcb0.png",
+    "static/media/cover-image.jpeg": "/nt-portfolio/static/media/cover-image.4762370ddce441c68f4d.jpeg",
+    "index.html": "/nt-portfolio/index.html",
+    "main.159410b1.css.map": "/nt-portfolio/static/css/main.159410b1.css.map",
+    "main.3d26d720.js.map": "/nt-portfolio/static/js/main.3d26d720.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.159410b1.css",
+    "static/js/main.3d26d720.js"
+  ]
+}
