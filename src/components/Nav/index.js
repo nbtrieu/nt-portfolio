@@ -3,7 +3,7 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
   const { 
-    pages = [],
+    pages,
     setCurrentPage,
     currentPage
   } = props;
@@ -17,7 +17,7 @@ function Nav(props) {
       <ul className="flex-row">
         {pages.map((Page) => (
           <li 
-            className={`mx-2 ${currentPage.name === Page.name && 'navActive'}`}
+            className={`mx-2 ${currentPage.name === Page.name ? 'navActive' : null}`}
             key={Page.name}
           >
             <span onClick={() => setCurrentPage(Page)}>

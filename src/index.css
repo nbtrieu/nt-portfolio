@@ -377,6 +377,11 @@ textarea {
   color: var(--secondary);
 }
 
+.fa-github,
+.fa-linkedin {
+  color: var(--darker);
+}
+
 @media only screen and (max-width: 1300px) {
   nav {
     position: static;
