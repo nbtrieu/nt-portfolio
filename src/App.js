@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Nav from './components/Nav';
 import Page from './components/Page';
 import { useState } from 'react';
@@ -26,6 +27,7 @@ function App() {
       <main>
         <Page currentPage={currentPage}></Page>
       </main>
+      <Footer />
     </div>
   );
 }
