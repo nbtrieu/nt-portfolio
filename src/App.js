@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Nav from './components/Nav';
+import Page from './components/Page';
 import { useState } from 'react';
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
         ></Nav>
       </Header>
       <main>
-        
+        <Page currentPage={currentPage}></Page>
       </main>
     </div>
   );
