@@ -4,6 +4,12 @@ import Project from "../Project";
 function Portfolio() {
   const [projects] = useState([
     {
+      name: 'Meet-and-Treats',
+      description: 'MERN/Node/React/MongoDB/Graphql',
+      link: 'https://shrouded-eyrie-81227.herokuapp.com/',
+      repo: 'https://github.com/nbtrieu/meet-n-treats'
+    },
+    {
       name: 'pokemon-battle-simulator',
       description: 'JavaScript/HTML/FoundationCSS',
       link: 'https://wangbrian26.github.io/Pokemon-Fusion-Battle-Simulator/',
@@ -24,9 +30,15 @@ function Portfolio() {
     {
       name: 'tech-blog',
       description: 'Express/Handlebars/Sequelize',
-      link: 'https://nbtrieu-note-taker.herokuapp.com/.',
+      link: 'https://shrouded-falls-58011.herokuapp.com/',
+      repo: 'https://github.com/nbtrieu/tech-blog'
+    },
+    {
+      name: 'note-taker',
+      description: 'Express/Handlebars/Sequelize',
+      link: 'https://nbtrieu-note-taker.herokuapp.com/',
       repo: 'https://github.com/nbtrieu/note-taker'
-    }
+    },
   ]);
 
   return (
