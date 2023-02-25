@@ -25,7 +25,7 @@ To install all necessary dependencies for development purposes, please run the c
 
 ## Usage
 
-To use this application, click through the links on the Navbar at the top.
+To use this application, open the portfolio here: [https://nbtrieu.github.io/nt-portfolio/](https://nbtrieu.github.io/nt-portfolio/). Then click through the links on the Navbar at the top.
 
  
 ![About Me](./src/assets/screenshots/about-me.png)  
