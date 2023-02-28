@@ -6,7 +6,7 @@ function Portfolio() {
     {
       name: 'Meet-and-Treats',
       description: 'MERN/Node/React/MongoDB/Graphql',
-      link: 'https://shrouded-eyrie-81227.herokuapp.com/',
+      link: 'https://meet-n-treats.herokuapp.com/',
       repo: 'https://github.com/nbtrieu/meet-n-treats'
     },
     {

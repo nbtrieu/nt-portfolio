@@ -42,7 +42,7 @@ function Contact() {
   };
 
   return (
-    <section>
+    <section className="my-5">
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
@@ -76,7 +76,7 @@ function Contact() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit">Submit</button>
+        <button type="submit" className="btn btn-info">Submit</button>
       </form>
     </section>
   )

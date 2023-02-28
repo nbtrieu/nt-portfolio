@@ -1,17 +1,97 @@
-import profileImage from '../../assets/profile/profile.jpeg';
+import profileImage from '../../assets/profile/profile.JPG';
+import { useState, useEffect } from "react";
+import { Carousel } from '../Carousel/Carousel';
 
 function About() {
+  const [text, setText] = useState("")
+  const [fullText, setFullText] = useState(
+      "Hello. Thank you for visiting my website."
+    )
+  const [index, setIndex] = useState(0)
+  
+  useEffect(() => {
+    if (index < fullText.length) {
+      setTimeout(() => {
+        setText(text + fullText[index])
+        setIndex(index + 1)
+      }, 40)
+    }
+  }, [index]);
+
+  const [projects] = useState([
+    {
+      name: 'Meet-and-Treats',
+      description: 'MERN/Node/React/MongoDB/Graphql',
+      link: 'https://meet-n-treats.herokuapp.com/',
+      repo: 'https://github.com/nbtrieu/meet-n-treats'
+    },
+    {
+      name: 'pokemon-battle-simulator',
+      description: 'JavaScript/HTML/FoundationCSS',
+      link: 'https://wangbrian26.github.io/Pokemon-Fusion-Battle-Simulator/',
+      repo: 'https://github.com/wangbrian26/Pokemon-Fusion-Battle-Simulator'
+    },
+    {
+      name: 'SEND-MOODS',
+      description: 'Node/Handlebars/Sequelize',
+      link: 'https://shrouded-eyrie-81227.herokuapp.com/',
+      repo: 'https://github.com/BryantTrinh/Mood-App-Send-Moods'
+    },
+    {
+      name: 'weather-dashboard',
+      description: 'JavaScript/HTML/CSS',
+      link: 'https://nbtrieu.github.io/weather-dashboard/',
+      repo: 'https://github.com/nbtrieu/weather-dashboard'
+    },
+    {
+      name: 'tech-blog',
+      description: 'Express/Handlebars/Sequelize',
+      link: 'https://shrouded-falls-58011.herokuapp.com/',
+      repo: 'https://github.com/nbtrieu/tech-blog'
+    },
+    {
+      name: 'note-taker',
+      description: 'Express/Handlebars/Sequelize',
+      link: 'https://nbtrieu-note-taker.herokuapp.com/',
+      repo: 'https://github.com/nbtrieu/note-taker'
+    },
+  ]);
+  
   return (
-    <div className='flex-row'>
-      <div className=''>
-        <img src={profileImage} alt='my profile picture' width='200'></img>
+    <div className='flex-row ml-5 mt-5'>
+      <h2>{text}</h2>
+      <div className='flex-row mx-auto my-5 justify-content-center align-items-center'>
+        <div className='col-lg-2'>
+          <img src={profileImage} alt='my profile' width='200'></img>
+        </div>
+        <div className='col-lg-10'>
+          <p className='about-paragraph'>
+            Science educator turned web developer passionate about making helpful clean apps with positive user experience. 
+            I am a coding bootcamp graduate skilled in JavaScript and MERN stack development with experience creating 
+            readable source code in both Client-Server architecture and MVC design pattern. I am looking for a role in
+            front-end and/or back-end web development.
+          </p>
+          <div className='flex-row'>
+            <a href="https://www.linkedin.com/in/nicole-nghi-trieu/" target="_blank" rel="noopener noreferrer"><button className='btn btn-linkedin'>LinkedIn</button></a>
+            <a href="https://github.com/nbtrieu" target="_blank" rel="noopener noreferrer"><button className='btn btn-github'>GitHub</button></a>
+          </div>
+        </div>
       </div>
-      <div>
-        <p>I graduated from UCI in 2020 with a B.S. in Biology/Education and a teaching credential in Biological Sciences from the UCI CalTeach program. I worked full-time as a teacher for the last 2 years; first at a middle school teaching Integrated Sciences and then at a high school teaching Environmental Science. I loved teaching kids but now I am looking to pivot my career into the education technology and/or environmental science fields.</p>
+
+      <div className='carousel-container'>
+        <Carousel />
       </div>
+      
+      {/* <div className="flex-row">
+        {projects.map((project, idx) => (
+          <Project
+            project={project}
+            key={"project" + idx}
+          />
+        ))}
+      </div> */}
     </div>
   );
 };
-// *BUG: Bootstrap not working with React???
 
 export default About;

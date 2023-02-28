@@ -6,11 +6,11 @@ main {
 :root {
   --primary: #FFF5FD;
   --secondary: #31343D;
-  --tertiary: #b12704;
+  --tertiary: #8C788E;
   --light: #fafafa;
   --dark: #799FBA;
   --darker: #76385D;
-  --alpha: rgba(255,255,255,.7);
+  --alpha: #F7BAF4;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -79,7 +79,7 @@ h6 {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.75rem;
   margin: 20px 0;
   line-height: 2rem;
   color: var(--darker);
@@ -120,6 +120,21 @@ button {
   opacity: 0.7;
 }
 
+.btn.btn-linkedin {
+  background-color: #1770DA !important;
+}
+
+.btn.btn-linkedin:hover {
+  color: #fff !important;
+}
+
+.btn.btn-github {
+  background-color: #6e5494 !important;
+}
+
+.btn.btn-github:hover {
+  color: #fff !important;
+}
 
 button:hover {
   opacity: 1;
@@ -210,7 +225,7 @@ nav li {
 }
 
 ul.skills {
-  line-height: 2rem;
+  line-height: 3rem;
 }
 
 ul.skills li {
@@ -315,6 +330,87 @@ textarea {
   text-align: center;
 }
 
+.carousel-container {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  /* margin: -50px auto; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next,
+.prev {
+  top: calc(50% - 20px);
+  position: absolute;
+  background: var(--alpha);
+  /* color: #fff; */
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 4rem;
+  z-index: 2;
+}
+
+.next {
+  right: 20px;
+}
+
+.prev {
+  left: 20px;
+  transform: scale(-1);
+}
+
+.refresh {
+  padding: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.about-paragraph {
+  font-size: 1.75rem;
+  font-family: 'Noto Sans', sans-serif;
+  color: black;
+  line-height: 30px;
+  margin-top: -1px;
+}
+
+.project-header-about {
+  background-color: var(--tertiary);
+  margin-bottom: -20px;
+  padding: 20px ;
+}
+
+.project-header-about h3 {
+  font-size: 2.5rem;
+}
+
+.project-description {
+  color: var(--alpha)
+}
+
 .project {
   position: relative;
   width: 100%;
@@ -363,6 +459,13 @@ textarea {
   color: var(--darker);
 }
 
+.project-text-about a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--light) !important;
+  transition: all .3s ease-in-out;
+}
+
 .navActive {
   color: var(--secondary);
   cursor: default;
@@ -375,6 +478,10 @@ textarea {
 
 .resume a {
   color: var(--secondary);
+}
+
+.resume p {
+  font-size: 4rem !important;
 }
 
 .fa-github,
