@@ -1,6 +1,8 @@
 import profileImage from '../../assets/profile/profile.JPG';
 import { useState, useEffect } from "react";
-import { Carousel } from '../Carousel/Carousel';
+// import { Carousel } from '../Carousel';
+import Carousel from "framer-motion-carousel";
+import { removeHyphensAndCapitalize } from "../../utils/helpers";
 
 function About() {
   const [text, setText] = useState("")
@@ -79,7 +81,22 @@ function About() {
       </div>
 
       <div className='carousel-container'>
-        <Carousel />
+        <Carousel>
+          {projects.map((project) => {
+            return <div>
+              <div className="project-header-about">
+                <h3 className="project-text-about">
+                  <a href={project.link}>{removeHyphensAndCapitalize(project.name)}</a>{' '}
+                  <a href={project.repo}>
+                    <i className="fab fa-github"></i>
+                  </a>
+                </h3>
+                <p className="project-description">{project.description}</p>
+              </div>
+              <img src={require(`../../assets/projects/${project.name}.png`)}></img>
+            </div>
+          })}
+        </Carousel>
       </div>
       
       {/* <div className="flex-row">
