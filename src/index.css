@@ -385,13 +385,18 @@ textarea {
   cursor: pointer;
 }
 
+.page {
+  width: 70%;
+  margin: auto;
+}
+
 .page-title {
   font-weight: 700;
   font-size: 5rem;
 }
 
 .about-paragraph {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   font-family: 'Noto Sans', sans-serif;
   color: black;
   line-height: 30px;
@@ -401,15 +406,16 @@ textarea {
 .project-header-about {
   background-color: var(--tertiary);
   margin-bottom: -20px;
-  padding: 20px ;
+  padding: 40px 30px 5px 30px;
 }
 
 .project-header-about h3 {
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 .project-description {
-  color: var(--alpha)
+  color: var(--alpha);
+  font-size: 2.5rem;
 }
 
 .project {
@@ -471,6 +477,17 @@ textarea {
   font-weight: bold;
   color: var(--light) !important;
   transition: all .3s ease-in-out;
+}
+
+.project-img-about img {
+  margin-top: 50px !important;
+  margin-bottom: 250px !important;
+  height: 250%;
+}
+
+.project-card {
+  margin-bottom: 100px !important;
+  background-color: var(--tertiary);
 }
 
 .navActive {

@@ -27,7 +27,7 @@ function Page(props) {
   };
 
   return (
-    <section>
+    <section className="page">
       <h2 className="page-title">{capitalizeFirstLetter(currentPage.name)}</h2>
       <PageContent>{renderPage()}</PageContent>
     </section>

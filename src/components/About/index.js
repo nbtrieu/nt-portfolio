@@ -62,10 +62,10 @@ function About() {
     <div className='flex-row ml-5 mt-5'>
       <h2>{text}</h2>
       <div className='flex-row mx-auto my-5 justify-content-center align-items-center'>
-        <div className='col-lg-2'>
+        <div className='col-lg-3'>
           <img src={profileImage} alt='my profile' width='200'></img>
         </div>
-        <div className='col-lg-10'>
+        <div className='col-lg-9'>
           <p className='about-paragraph'>
             Science educator turned web developer passionate about making helpful clean apps with positive user experience. 
             I am a coding bootcamp graduate skilled in JavaScript and MERN stack development with experience creating 
@@ -80,9 +80,11 @@ function About() {
       </div>
 
       <div className='carousel-container'>
-        <Carousel>
-          {projects.map((project) => {
-            return <div>
+        <Carousel 
+          autoPlay={true}
+        >
+          {projects.map((project, i) => {
+            return <div className='project-card'>
               <div className="project-header-about">
                 <h3 className="project-text-about">
                   <a href={project.link}>{removeHyphensAndCapitalize(project.name)}</a>{' '}
@@ -92,20 +94,18 @@ function About() {
                 </h3>
                 <p className="project-description">{project.description}</p>
               </div>
-              <img src={require(`../../assets/projects/${project.name}.png`)}></img>
+              <div className="project-img-about">
+                <img 
+                  src={require(`../../assets/projects/${project.name}.png`)}
+                  draggable="false"
+                  key={i}
+                ></img>
+              </div>
+              
             </div>
           })}
         </Carousel>
       </div>
-      
-      {/* <div className="flex-row">
-        {projects.map((project, idx) => (
-          <Project
-            project={project}
-            key={"project" + idx}
-          />
-        ))}
-      </div> */}
     </div>
   );
 };

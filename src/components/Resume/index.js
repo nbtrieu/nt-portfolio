@@ -14,6 +14,9 @@ function Resume() {
             <li>React</li>
             <li>Bootstrap</li>
           </ul>
+          
+        </div>
+        <div className="flex-row">
           <h3>Back-end Proficiencies</h3>
           <ul className="skills">
             <li>APIs</li>
