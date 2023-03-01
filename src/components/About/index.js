@@ -1,6 +1,5 @@
 import profileImage from '../../assets/profile/profile.JPG';
 import { useState, useEffect } from "react";
-// import { Carousel } from '../Carousel';
 import Carousel from "framer-motion-carousel";
 import { removeHyphensAndCapitalize } from "../../utils/helpers";
 
