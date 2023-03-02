@@ -9,7 +9,7 @@ function Footer() {
     },
     {
       name: "fab fa-linkedin",
-      link: "https://www.linkedin.com/in/nicole-nghi-trieu-a5451a24a/"
+      link: "https://www.linkedin.com/in/nicole-nghi-trieu/"
     },
   ]
 
