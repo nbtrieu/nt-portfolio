@@ -4,8 +4,6 @@ import Portfolio from "../Portfolio";
 import Contact from "../Contact";
 import Resume from "../Resume";
 
-import { useState, useEffect } from "react";
-
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Page(props) {
@@ -29,7 +27,9 @@ function Page(props) {
   return (
     <section className="page">
       <h2 className="page-title">{capitalizeFirstLetter(currentPage.name)}</h2>
-      <PageContent>{renderPage()}</PageContent>
+      <div className="page-content">
+        <PageContent>{renderPage()}</PageContent>
+      </div>
     </section>
   )
 };

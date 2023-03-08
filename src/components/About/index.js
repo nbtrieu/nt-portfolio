@@ -1,7 +1,56 @@
 import profileImage from '../../assets/profile/profile.JPG';
 import { useState, useEffect } from "react";
 import Carousel from "framer-motion-carousel";
-import { removeHyphensAndCapitalize } from "../../utils/helpers";
+import { removeHyphensAndCapitalize } from '../../utils/helpers';
+
+import MyCarousel from '../Carousel';
+
+// let slideIndex = 1;
+// showSlides(slideIndex);
+// // wtf();
+// // Next/previous controls
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
+
+// // Thumbnail image controls
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+
+// function showSlides(n) {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   // console.log(document);
+//   // console.log(thing);
+//   // console.log('>>>slides in showSlides: ', slides);
+//   let dots = document.getElementsByClassName("dot");
+//   if (n > slides.length) {
+//     slideIndex = 1
+//   }
+//   if (n < 1) {
+//     slideIndex = slides.length
+//   }
+//   for (i = 0; i < slides.length; i++) {
+//     // console.log('>>>>', slides[i]);
+//     // console.log('>>>>>>>>>', slides[i].style.display);
+//     // console.log('>>>>>>>>>>>>>>>', typeof(slides[i].style.display));
+
+//     slides[i].style.display = "none";
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";
+//   dots[slideIndex-1].className += " active";
+// }
+
+// function wtf() {
+//   let thing = document.getElementsByClassName('carousel-container');
+//   console.log('thing: ', thing);
+//   let slides = document.getElementsByClassName('mySlides');
+//   console.log('slides: ', slides);
+// }
 
 function About() {
   const [text, setText] = useState("")
@@ -22,37 +71,37 @@ function About() {
   const [projects] = useState([
     {
       name: 'Meet-and-Treats',
-      description: 'MERN/Node/React/MongoDB/Graphql',
+      skills: 'MERN / Node / React / MongoDB / Graphql',
       link: 'https://meet-n-treats.herokuapp.com/',
       repo: 'https://github.com/nbtrieu/meet-n-treats'
     },
     {
       name: 'pokemon-battle-simulator',
-      description: 'JavaScript/HTML/FoundationCSS',
+      skills: 'JavaScript / HTML / FoundationCSS',
       link: 'https://wangbrian26.github.io/Pokemon-Fusion-Battle-Simulator/',
       repo: 'https://github.com/wangbrian26/Pokemon-Fusion-Battle-Simulator'
     },
     {
       name: 'SEND-MOODS',
-      description: 'Node/Handlebars/Sequelize',
+      skills: 'Node / Handlebars / Sequelize',
       link: 'https://shrouded-eyrie-81227.herokuapp.com/',
       repo: 'https://github.com/BryantTrinh/Mood-App-Send-Moods'
     },
     {
       name: 'weather-dashboard',
-      description: 'JavaScript/HTML/CSS',
+      skills: 'JavaScript / HTML / CSS',
       link: 'https://nbtrieu.github.io/weather-dashboard/',
       repo: 'https://github.com/nbtrieu/weather-dashboard'
     },
     {
       name: 'tech-blog',
-      description: 'Express/Handlebars/Sequelize',
+      skills: 'Express / Handlebars / Sequelize',
       link: 'https://shrouded-falls-58011.herokuapp.com/',
       repo: 'https://github.com/nbtrieu/tech-blog'
     },
     {
       name: 'note-taker',
-      description: 'Express/Handlebars/Sequelize',
+      skills: 'Express / Handlebars / Sequelize',
       link: 'https://nbtrieu-note-taker.herokuapp.com/',
       repo: 'https://github.com/nbtrieu/note-taker'
     },
@@ -85,14 +134,16 @@ function About() {
         >
           {projects.map((project, i) => {
             return <div className='project-card'>
-              <div className="project-header-about">
+              <div className="project-header-about flex-row">
                 <h3 className="project-text-about">
                   <a href={project.link}>{removeHyphensAndCapitalize(project.name)}</a>{' '}
                   <a href={project.repo}>
                     <i className="fab fa-github"></i>
                   </a>
                 </h3>
-                <p className="project-description">{project.description}</p>
+                <div className='flex-row'>
+                  <p className="project-skills">{project.skills}</p>
+                </div>
               </div>
               <div className="project-img-about">
                 <img 
@@ -106,6 +157,39 @@ function About() {
           })}
         </Carousel>
       </div>
+      {/* <MyCarousel /> */}
+      {/* <div className='carousel-container mt-5'>
+        {projects.map((project, i) => {
+          return <div className="mySlides" name="thing">
+            <div className="project-header-about">
+              <h3 className="project-text-about">
+                <a href={project.link}>{removeHyphensAndCapitalize(project.name)}</a>{' '}
+                <a href={project.repo}>
+                  <i className="fab fa-github"></i>
+                </a>
+              </h3>
+              <p className="project-description">{project.description}</p>
+            </div>
+            <div className="project-img-about">
+              <img 
+                src={require(`../../assets/projects/${project.name}.png`)}
+                draggable="false"
+                key={i}
+              ></img>
+            </div>
+            <a className="prev" onClick={plusSlides(-1)}>&#10094;</a>
+            <a className="next" onClick={plusSlides(1)}>&#10095;</a>
+          </div>
+        })}
+        <div className='text-center dots-container'>
+          <span className="dot" onClick={currentSlide(1)}></span>
+          <span className="dot" onClick={currentSlide(2)}></span>
+          <span className="dot" onClick={currentSlide(3)}></span>
+          <span className="dot" onClick={currentSlide(4)}></span>
+          <span className="dot" onClick={currentSlide(5)}></span>
+          <span className="dot" onClick={currentSlide(6)}></span>
+        </div>
+      </div> */}
     </div>
   );
 };
