@@ -112,10 +112,10 @@ function About() {
       <h2>{text}</h2>
       <div className='flex-row mx-auto my-5 justify-content-center align-items-center'>
         <div className='col-lg-3'>
-          <img src={profileImage} alt='my profile' width='200'></img>
+          <img src={profileImage} alt='my profile' width='200' className='mt-3'></img>
         </div>
         <div className='col-lg-9'>
-          <p className='about-paragraph'>
+          <p className='about-paragraph mt-3'>
             Science educator turned web developer passionate about making helpful clean apps with positive user experience. 
             I am a coding bootcamp graduate skilled in JavaScript and MERN stack development with experience creating 
             readable source code in both Client-Server architecture and MVC design pattern. I am looking for a role in

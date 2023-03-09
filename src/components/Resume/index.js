@@ -2,7 +2,9 @@ function Resume() {
   return (
     <section className="my-5">
       <div className="my-2">
-        <p className="resume">Download my <a href="https://docs.google.com/document/d/1T5XzGWGIqNqxX_mQ1Tby3NTYNrvgvExAuRNAo-U8Uzg/edit?usp=sharing" target="_blank" rel="noopener noreferrer">resume</a></p>
+        <div className="px-2">
+          <p className="resume">Download my <a href="https://docs.google.com/document/d/1T5XzGWGIqNqxX_mQ1Tby3NTYNrvgvExAuRNAo-U8Uzg/edit?usp=sharing" target="_blank" rel="noopener noreferrer">resume</a></p>
+        </div>
         <div className="flex-row">
           <div className="col-sm-4 skills-title">
             <h3>Front-end Proficiencies</h3>

@@ -25,7 +25,7 @@ function Nav(props) {
 
   return (
     <nav className="">
-      <ul className="flex-row" id="">
+      <ul className="flex-row d-flex justify-content-center flex-center" id="">
         {pages.map((Page) => (
           <li 
             className={`mx-2 ${currentPage.name === Page.name ? 'navActive' : null}`}
