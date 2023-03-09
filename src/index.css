@@ -234,6 +234,14 @@ ul.skills li {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.project-text-portfolio a {
+  text-decoration: none;
+}
+
+.project-text-portfolio a:hover {
+  color: #fff;
+}
+
 footer {
   font-size: 48px;
   justify-content: center;
