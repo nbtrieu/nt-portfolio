@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Carousel from "framer-motion-carousel";
 import { removeHyphensAndCapitalize } from '../../utils/helpers';
 
-import MyCarousel from '../Carousel';
+// import MyCarousel from '../Carousel';
 
 // let slideIndex = 1;
 // showSlides(slideIndex);
@@ -135,22 +135,36 @@ function About() {
           {projects.map((project, i) => {
             return <div className='project-card'>
               <div className="project-header-about flex-row">
-                <h3 className="project-text-about">
-                  <a href={project.link}>{removeHyphensAndCapitalize(project.name)}</a>{' '}
-                  <a href={project.repo}>
-                    <i className="fab fa-github"></i>
-                  </a>
-                </h3>
-                <div className='flex-row'>
-                  <p className="project-skills">{project.skills}</p>
+                <div>
+                  <h3 className="project-text-portfolio">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      {removeHyphensAndCapitalize(project.name)}
+                    </a>
+                  </h3>
+                </div>
+                <div>
+                  <div className="mx-3">
+                    <h3>
+                      <a href={project.repo} mx-2>
+                        <i className="fab fa-github"></i>
+                      </a>
+                    </h3>
+                  </div>
                 </div>
               </div>
+              <div className='project-skills-about flex-row '>
+                <p className="project-skills">{project.skills}</p>
+              </div>
               <div className="project-img-about">
-                <img 
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <img 
                   src={require(`../../assets/projects/${project.name}.png`)}
                   draggable="false"
                   key={i}
+                  alt=""
                 ></img>
+                </a>
+                
               </div>
               
             </div>

@@ -89,12 +89,16 @@ p {
 a {
   color: var(--light);
   text-decoration: none;
-  opacity: .5;
+  /* opacity: .5; */
 }
 
 a:hover {
   opacity: 1;
   transition: all .2s ease-in-out;
+}
+
+a:visited {
+  color: var(--light) !important;
 }
 
 header {
@@ -308,6 +312,11 @@ textarea {
   margin-left: var(--spacing-two);
 }
 
+.mx-3 {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
 .mr-2 {
   margin-right: 0.625rem !important;
 }
@@ -340,6 +349,11 @@ textarea {
 .px-3 {
   padding-right: 2rem !important;
   padding-left: 2rem !important;
+}
+
+.px-4 {
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
 }
 
 .py-1 {
@@ -626,6 +640,28 @@ textarea {
   padding: 40px 30px 5px 30px;
 }
 
+.project-skills-about {
+  background-color: var(--tertiary);
+  margin-bottom: -20px;
+  padding: 0px 30px;
+}
+
+.project-skills-portfolio {
+  background-color: var(--tertiary);
+  margin-bottom: -20px;
+  padding: 0px 30px 20px 30px;
+}
+
+.project-header-portfolio {
+  background-color: var(--tertiary);
+  /* margin-bottom: -20px; */
+  padding: 20px 30px 0px 30px;
+}
+
+.project-header-portfolio h3 {
+  font-size: 4rem;
+}
+
 .project-header-about h3 {
   font-size: 4rem;
 }
@@ -705,7 +741,7 @@ textarea {
 }
 
 .project-img-portfolio img {
-  margin-top: 50px !important;
+  margin-top: 0px !important;
   margin-bottom: 0px !important;
   height: 500px;
   width: 100%;
@@ -713,7 +749,6 @@ textarea {
 }
 
 .project-card {
-  
   margin-bottom: 100px !important;
   background-color: var(--tertiary);
 }
@@ -734,8 +769,9 @@ textarea {
 .project-description-portfolio {
   z-index: 100;
   font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
   color: var(--light);
-  line-height: 3rem;
+  line-height: 2.75rem;
 }
 
 .navActive {
@@ -776,7 +812,7 @@ textarea {
     font-size: 4rem;
   } */
   .project-card {
-    max-width: 450px;
+    max-width: 350px;
   }
   .page {
     margin-right: 1300px !important;

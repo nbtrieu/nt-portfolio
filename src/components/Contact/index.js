@@ -1,45 +1,45 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-import { validateEmail } from "../../utils/helpers";
+// import { validateEmail } from "../../utils/helpers";
 
 function Contact() {
-  const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  // const [formState, setFormState] = useState({
+  //   name: '',
+  //   email: '',
+  //   message: '',
+  // });
 
-  const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState; 
+  // const [errorMessage, setErrorMessage] = useState('');
+  // const { name, email, message } = formState; 
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!errorMessage) {
-      console.log('Submit Form', formState);
-    }
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (!errorMessage) {
+  //     console.log('Submit Form', formState);
+  //   }
+  // };
 
-  const handleChange = (e) => {
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
-      } else {
-        setErrorMessage('');
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`Your ${e.targe.name} is required.`);
-      } else {
-        setErrorMessage('');
-      }
-    }
+  // const handleChange = (e) => {
+  //   if (e.target.name === 'email') {
+  //     const isValid = validateEmail(e.target.value);
+  //     if (!isValid) {
+  //       setErrorMessage('Your email is invalid.');
+  //     } else {
+  //       setErrorMessage('');
+  //     }
+  //   } else {
+  //     if (!e.target.value.length) {
+  //       setErrorMessage(`Your ${e.targe.name} is required.`);
+  //     } else {
+  //       setErrorMessage('');
+  //     }
+  //   }
 
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
-    }
-  };
+  //   if (!errorMessage) {
+  //     setFormState({ ...formState, [e.target.name]: e.target.value });
+  //     console.log('Handle Form', formState);
+  //   }
+  // };
 
   return (
     <section className="my-5">
@@ -83,7 +83,7 @@ function Contact() {
           <i class="fa fa-envelope" aria-hidden="true"></i>
         </div>
         <div className="col-md-1">
-          nbtrieu@uci.edu
+          nicole.nghi.trieu@gmail.com
         </div>
       </div>
       <div className="flex-row d-flex align-items-start contacts mt-3 mb-6">
