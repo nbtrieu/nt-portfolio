@@ -238,6 +238,10 @@ ul.skills li {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.avatar {
+  padding: 0 !important;
+}
+
 .project-text-portfolio a {
   text-decoration: none;
 }

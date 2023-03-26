@@ -108,10 +108,10 @@ function About() {
   ]);
   
   return (
-    <div className='flex-row ml-5 mt-5'>
+    <div className='flex-row mt-5'>
       <h2>{text}</h2>
       <div className='flex-row mx-auto my-5 justify-content-center align-items-center'>
-        <div className='col-lg-3'>
+        <div className='col-lg-3 avatar'>
           <img src={profileImage} alt='my profile' width='200' className='mt-3'></img>
         </div>
         <div className='col-lg-9'>
