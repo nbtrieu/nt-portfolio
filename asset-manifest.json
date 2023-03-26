@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nt-portfolio/static/css/main.ecc2cc75.css",
-    "main.js": "/nt-portfolio/static/js/main.82964b07.js",
+    "main.css": "/nt-portfolio/static/css/main.f25a6a7d.css",
+    "main.js": "/nt-portfolio/static/js/main.3e9db992.js",
     "static/media/pokemon-battle-simulator.png": "/nt-portfolio/static/media/pokemon-battle-simulator.4dbedfd198a48a671fd7.png",
     "static/media/profile.JPG": "/nt-portfolio/static/media/profile.6c63d8e424b13f8d82a9.JPG",
     "static/media/Meet-and-Treats.png": "/nt-portfolio/static/media/Meet-and-Treats.f56b448f58bea3734ef6.png",
@@ -11,11 +11,11 @@
     "static/media/note-taker.png": "/nt-portfolio/static/media/note-taker.68e46ec7dd05bb16bcb0.png",
     "static/media/cover-image.jpeg": "/nt-portfolio/static/media/cover-image.4762370ddce441c68f4d.jpeg",
     "index.html": "/nt-portfolio/index.html",
-    "main.ecc2cc75.css.map": "/nt-portfolio/static/css/main.ecc2cc75.css.map",
-    "main.82964b07.js.map": "/nt-portfolio/static/js/main.82964b07.js.map"
+    "main.f25a6a7d.css.map": "/nt-portfolio/static/css/main.f25a6a7d.css.map",
+    "main.3e9db992.js.map": "/nt-portfolio/static/js/main.3e9db992.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecc2cc75.css",
-    "static/js/main.82964b07.js"
+    "static/css/main.f25a6a7d.css",
+    "static/js/main.3e9db992.js"
   ]
 }
